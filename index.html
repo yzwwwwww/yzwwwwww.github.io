@@ -45,46 +45,34 @@
         }
 
         h1 {
-            font-size: 2.8rem;
+            font-size: 1.8rem;      /* 缩小 */
             font-weight: 600;
             color: #e0ffff;
             text-shadow: 0 4px 15px rgba(0, 80, 80, 0.6);
             letter-spacing: 2px;
-            margin-bottom: 1rem;
-            border-right: 2px solid rgba(80, 255, 255, 0.6);
-            padding-right: 1.5rem;
-            display: inline-block;
-            white-space: nowrap;
-        }
-
-        .sub {
-            margin-top: 1.5rem;
-            color: #b0ffff;
-            font-size: 1.1rem;
-            letter-spacing: 1px;
-            border-top: 1px solid rgba(80, 255, 255, 0.4);
-            padding-top: 1.2rem;
-            display: inline-block;
+            margin-bottom: 2rem;
+            text-align: right;       /* 右对齐 */
+            border-bottom: 1px solid rgba(80, 255, 255, 0.4);
+            padding-bottom: 0.8rem;
         }
 
         .download-section {
-            margin-top: 2rem;
-            padding-top: 1.5rem;
-            border-top: 1px dashed rgba(80, 255, 255, 0.5);
+            margin-top: 1rem;
         }
 
-        .download-title {
-            font-size: 1.3rem;
-            color: #b8ffff;
+        .game-title {
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: #d4ffff;
+            margin-bottom: 0.5rem;
+            letter-spacing: 2px;
+        }
+
+        .version {
+            font-size: 1.2rem;
+            color: #a8ffff;
             margin-bottom: 1rem;
             font-weight: 500;
-        }
-
-        .download-links {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 1rem;
         }
 
         .download-btn {
@@ -92,12 +80,13 @@
             background: rgba(0, 80, 80, 0.7);
             color: #ccffff;
             text-decoration: none;
-            padding: 0.7rem 1.5rem;
+            padding: 0.7rem 1.8rem;
             border-radius: 2rem;
             font-weight: 500;
             backdrop-filter: blur(4px);
             transition: all 0.2s ease;
             border: 1px solid #3ecfcf;
+            font-size: 1rem;
         }
 
         .download-btn:hover {
@@ -112,15 +101,13 @@
                 padding: 2rem 1.5rem;
             }
             h1 {
-                font-size: 1.8rem;
-                white-space: normal;
-                border-right: none;
-                padding-right: 0;
-                border-bottom: 2px solid rgba(80, 255, 255, 0.6);
-                padding-bottom: 0.5rem;
+                font-size: 1.4rem;
             }
-            .sub {
-                font-size: 0.9rem;
+            .game-title {
+                font-size: 1.4rem;
+            }
+            .version {
+                font-size: 1rem;
             }
             .download-btn {
                 padding: 0.5rem 1.2rem;
@@ -132,17 +119,12 @@
 <body>
     <div class="card">
         <h1>穷且益坚，不坠青云之志！</h1>
-        <div class="sub">Stay hungry, stay foolish. —— Steve Jobs</div>
 
         <div class="download-section">
-            <div class="download-title">⬇️ 项目下载</div>
-            <div class="download-links">
-                <!-- 假设你的 .exe 文件名为 project.exe，放在仓库根目录 -->
-                <a href="THEGENSHININVOKATIONGAME.exe" class="download-btn" download>📦 下载 .exe 程序</a>
-                <!-- 如果有多个文件，可以继续添加 -->
-                <!-- <a href="other.exe" class="download-btn">⚙️ 其他工具</a> -->
-            </div>
-            <p style="font-size:0.8rem; margin-top:1rem; color:#8ccccc;">（请将 .exe 文件放置于仓库根目录，并修改链接文件名）</p>
+            <div class="game-title">《原神—七圣召唤》</div>
+            <div class="version">v0.1.0下载</div>
+            <a href="THEGENSHININVOKATIONGAME.exe" class="download-btn" download>THEGENSHININVOKATIONGAME</a>
+            <p style="font-size:0.7rem; margin-top:1rem; color:#8ccccc;">（请将 .exe 文件命名为 THEGENSHININVOKATIONGAME.exe 并放置于仓库根目录）</p>
         </div>
     </div>
 </body>
