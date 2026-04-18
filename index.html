@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>穷且益坚，不坠青云之志</title>
+    <title>七圣召唤 · 版本下载</title>
     <style>
         * {
             margin: 0;
@@ -12,119 +12,153 @@
         }
 
         body {
-            height: 100vh;
-            background: linear-gradient(135deg, #0b3b3b, #1a7f7f, #3ecfcf);
-            background-size: 200% 200%;
-            animation: gradientShift 12s ease infinite;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-family: 'Segoe UI', 'Microsoft YaHei', 'WenQuanYi Micro Hei', 'PingFang SC', 'Noto Sans CJK SC', sans-serif;
+            background: #f0f2f5;
+            font-family: system-ui, 'Segoe UI', 'Noto Sans', sans-serif;
+            padding: 2rem;
         }
 
-        @keyframes gradientShift {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 0;
+            box-shadow: none;
+            padding: 2rem;
         }
 
-        .card {
-            background: rgba(0, 40, 40, 0.65);
-            backdrop-filter: blur(8px);
-            border-radius: 2rem;
-            padding: 3rem 4rem;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(80, 255, 255, 0.3);
-            text-align: center;
-            transition: transform 0.3s ease;
-            max-width: 90%;
-            width: 700px;
-        }
-
-        .card:hover {
-            transform: scale(1.02);
+        /* 所有文字左对齐 */
+        h1, h2, p, .version-item, .download-section {
+            text-align: left;
         }
 
         h1 {
-            font-size: 1.8rem;      /* 缩小 */
+            font-size: 1.8rem;
             font-weight: 600;
-            color: #e0ffff;
-            text-shadow: 0 4px 15px rgba(0, 80, 80, 0.6);
-            letter-spacing: 2px;
-            margin-bottom: 2rem;
-            text-align: right;       /* 右对齐 */
-            border-bottom: 1px solid rgba(80, 255, 255, 0.4);
-            padding-bottom: 0.8rem;
+            margin-bottom: 0.5rem;
+            color: #111;
         }
 
-        .download-section {
-            margin-top: 1rem;
+        .sub {
+            font-size: 0.9rem;
+            color: #555;
+            margin-bottom: 2rem;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 0.75rem;
         }
 
         .game-title {
-            font-size: 1.8rem;
+            font-size: 1.5rem;
             font-weight: 600;
-            color: #d4ffff;
-            margin-bottom: 0.5rem;
-            letter-spacing: 2px;
-        }
-
-        .version {
-            font-size: 1.2rem;
-            color: #a8ffff;
             margin-bottom: 1rem;
-            font-weight: 500;
+            color: #1a1a1a;
         }
 
-        .download-btn {
-            display: inline-block;
-            background: rgba(0, 80, 80, 0.7);
-            color: #ccffff;
-            text-decoration: none;
-            padding: 0.7rem 1.8rem;
-            border-radius: 2rem;
-            font-weight: 500;
-            backdrop-filter: blur(4px);
-            transition: all 0.2s ease;
-            border: 1px solid #3ecfcf;
+        .version-list {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+            margin-top: 1rem;
+        }
+
+        .version-item {
+            display: flex;
+            align-items: baseline;
+            flex-wrap: wrap;
+            gap: 1rem;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 0.6rem;
+        }
+
+        .version-number {
+            font-family: monospace;
             font-size: 1rem;
+            font-weight: 500;
+            min-width: 100px;
+            color: #0b5e7e;
         }
 
-        .download-btn:hover {
-            background: #2a9f9f;
-            color: #ffffff;
-            transform: translateY(-2px);
-            box-shadow: 0 5px 12px rgba(0, 200, 200, 0.4);
+        .download-link {
+            background: #e9ecef;
+            color: #0a3e4c;
+            text-decoration: none;
+            padding: 0.25rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            transition: background 0.2s;
         }
 
-        @media (max-width: 600px) {
-            .card {
-                padding: 2rem 1.5rem;
-            }
-            h1 {
-                font-size: 1.4rem;
-            }
-            .game-title {
-                font-size: 1.4rem;
-            }
-            .version {
-                font-size: 1rem;
-            }
-            .download-btn {
-                padding: 0.5rem 1.2rem;
-                font-size: 0.9rem;
-            }
+        .download-link:hover {
+            background: #d4d9e0;
+            text-decoration: underline;
+        }
+
+        hr {
+            margin: 1.5rem 0;
+            border: none;
+            border-top: 1px solid #ccc;
+        }
+
+        footer {
+            margin-top: 2rem;
+            font-size: 0.75rem;
+            color: #888;
         }
     </style>
 </head>
 <body>
-    <div class="card">
-        <h1>穷且益坚，不坠青云之志！</h1>
+<div class="container">
+    <h1>穷且益坚，不坠青云之志！</h1>
+    <div class="sub"></div>
 
-        <div class="download-section">
-            <div class="game-title">《原神—七圣召唤》</div>
-            <div class="version">v0.1.0下载</div>
-            <a href="THEGENSHININVOKATIONGAME.exe" class="download-btn" download>THEGENSHININVOKATIONGAME</a>
+    <div class="game-title">《原神—七圣召唤》</div>
+
+    <!-- 预留10个空位，可自行填入实际版本和下载链接 -->
+    <div class="version-list">
+        <div class="version-item">
+            <span class="version-number">v0.1.0</span>
+            <a href="THEGENSHININVOKATIONGAME.exe" class="download-link">下载</a>
+        </div>
+        <div class="version-item">
+            <span class="version-number">v0.0.0</span>
+            <a href="#" class="download-link">下载</a>
+        </div>
+        <div class="version-item">
+            <span class="version-number">v0.0.0</span>
+            <a href="#" class="download-link">下载</a>
+        </div>
+        <div class="version-item">
+            <span class="version-number">v0.0.0</span>
+            <a href="#" class="download-link">下载</a>
+        </div>
+        <div class="version-item">
+            <span class="version-number">v0.0.0</span>
+            <a href="#" class="download-link">下载</a>
+        </div>
+        <div class="version-item">
+            <span class="version-number">v0.0.0</span>
+            <a href="#" class="download-link">下载</a>
+        </div>
+        <div class="version-item">
+            <span class="version-number">v0.4.0</span>
+            <a href="#" class="download-link">下载</a>
+        </div>
+        <div class="version-item">
+            <span class="version-number">v0.0.0</span>
+            <a href="#" class="download-link">下载</a>
+        </div>
+        <div class="version-item">
+            <span class="version-number">v0.0.0</span>
+            <a href="#" class="download-link">下载</a>
+        </div>
+        <div class="version-item">
+            <span class="version-number">v0.0.0</span>
+            <a href="#" class="download-link">下载</a>
         </div>
     </div>
+
+    <footer>
+        仅用于版本存档 · 链接待补充
+    </footer>
+</div>
 </body>
 </html>
